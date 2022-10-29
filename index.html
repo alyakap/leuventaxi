@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="icon" type="ico" href="/img/favicon.ico" />
     <!-- Meta Description -->
     <meta name="description" content="Leuven Taxi – BNX" />
     <!-- Meta Keyword -->
@@ -28,6 +28,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      .listitem {
+        color: black;
+      }
+      @media screen and (max-width: 1000px) {
+        .logo {
+          width: 40%;
+        }
+        .logofoot {
+          width: 80%;
+        }
+        .tophead {
+          margin-top: 100px;
+          height: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header id="header">
@@ -35,7 +52,7 @@
       <div class="container main-menu">
         <div class="row align-items-center justify-content-between d-flex">
           <a href="index.html"
-            ><img width="50%" src="img/logo.png" alt="" title=""
+            ><img width="50%" src="img/logo.png" alt="" class="logo"
           /></a>
           <nav id="nav-menu-container">
             <ul class="nav-menu">
@@ -56,7 +73,7 @@
         <div
           class="row fullscreen d-flex align-items-center justify-content-between"
         >
-          <div class="banner-content col-lg-6 col-md-6">
+          <div class="banner-content col-lg-6 col-md-6 tophead mb-40">
             <h3 class="text-white">Leuven Taxi – BNX</h3>
             <h1 class="text-uppercase">
               <a
@@ -72,17 +89,18 @@
             </p>
             <a
               href="tel:+32468%2051%2078%2006"
-              class="primary-btn text-uppercase mr-10"
-              ><i class="fa fa-phone mr-10"></i>Call for taxi</a
+              class="primary-btn text-uppercase mr-10 mb-2"
+              ><i class="fa fa-phone mr-10"></i>Call for a Taxi</a
             >
             <a
               href="https://api.whatsapp.com/send/?phone=32468517806&text=Hi+%21+%0D%0ALeuven+Taxi&type=phone_number&app_absent=0"
               class="primary-btn text-uppercase"
               style="background-color: #55ee6a"
-              ><i class="fa fa-whatsapp mr-10"></i>Whatsapp Us</a
+              ><i class="fa fa-whatsapp mr-10"></i>&nbsp;&nbsp;Whatsapp
+              Us&nbsp;&nbsp;</a
             >
           </div>
-          <div class="col-lg-4 col-md-6 header-right">
+          <div class="col-lg-4 col-md-6 header-right mt-70">
             <h4 class="pb-30">Book Your Taxi Online!</h4>
             <form class="form" id="form_id">
               <div class="from-group">
@@ -93,6 +111,7 @@
                   placeholder="Your name"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Your name'"
+                  required
                 />
                 <input
                   class="form-control txt-field"
@@ -101,6 +120,7 @@
                   placeholder="Email address"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Email address'"
+                  required
                 />
                 <input
                   class="form-control txt-field"
@@ -112,11 +132,27 @@
                 />
                 <input
                   class="form-control txt-field"
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone number"
+                  type="text"
+                  name="pickupaddress"
+                  placeholder="Pickup Address"
                   onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Address'"
+                  onblur="this.placeholder = 'Pickup Address'"
+                />
+                <input
+                  class="form-control txt-field"
+                  type="text"
+                  name="destination"
+                  placeholder="Destination"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Destination'"
+                />
+                <input
+                  class="form-control txt-field"
+                  type="text"
+                  name="additionalRemarks"
+                  placeholder="Additional Remarks"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Additional Remarks'"
                 />
               </div>
 
@@ -140,7 +176,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 about-left">
-            <img class="img-fluid" src="img/about-img.jpg" alt="" />
+            <img class="img-fluid" src="img/taxim.jpg" alt="" />
           </div>
           <div class="col-lg-8 about-right">
             <h1>Welcome to Leuven Taxi – BNX</h1>
@@ -167,27 +203,32 @@
         <div class="row align-items-center section-gap">
           <div class="col-lg-10">
             <h1 class="mb-30">Experience Great Support</h1>
-            <ul>
-              <li>
+            <ul class="listitem">
+              <li class="mb-2 listitem">
+                <i class="fa fa-caret-right mr-2"></i>
                 We are comparatively a small friendly team, therefore we can
                 keep our quality to the highest standards and offer a personal
                 service.
               </li>
-              <li>
+              <li class="mb-2">
+                <i class="fa fa-caret-right mr-2"></i>
                 Our primary objective is to provide an executive taxi service
                 that will meet your expectations.
               </li>
-              <li>
+              <li class="mb-2">
+                <i class="fa fa-caret-right mr-2"></i>
                 Our fleet of executive vehicles are fitted with leather
                 interiors, climate control and satellite navigation etc. so you
                 can relax in comfort and style while we get you to your
                 destination on time.
               </li>
-              <li>
+              <li class="mb-2">
+                <i class="fa fa-caret-right mr-2"></i>
                 Our drivers are professional, smartly dressed and well-mannered
                 and provide a prompt, friendly and efficient service.
               </li>
-              <li>
+              <li class="mb-2">
+                <i class="fa fa-caret-right mr-2"></i>
                 Our office staff are friendly and helpful and we’ll go out of
                 our way to provide the highest standards of customer service.
                 Complimentary Wi-Fi, newspaper, bottled water & refreshments
@@ -212,7 +253,7 @@
               <div class="col-lg-10 col-md-6">
                 <a href="index.html"
                   ><img
-                    class="mb-20"
+                    class="mb-20 logofoot"
                     width="120%"
                     src="img/logo.png"
                     alt=""
@@ -248,7 +289,7 @@
                 </p>
                 <p class="mb-3 text-white">
                   <i aria-hidden="true" class="fa fa-envelope mr-3"></i>
-                  <span>info.leuventaxi@gmail.com</span>
+                  <span>info@leuventaxi.com</span>
                 </p>
               </div>
             </div>
